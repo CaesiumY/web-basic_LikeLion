@@ -24,30 +24,37 @@
     <script src="main.js"></script> -->
 </head>
 <body>
-    <h1>H1 크기</h1>
-    <h2>H2 크기</h2>
+    <div class="container">
+        <ul class="nav nav-tabs">
+            <li role="presentation" class="active"><a href="#">Home</a></li>
+            <li role="presentation"><a href="#">Profile</a></li>
+            <li role="presentation"><a href="#">Messages</a></li>
+        </ul>
+        <h1>H1 크기</h1>
+        <h2>H2 크기</h2>
 
-    <form action="">
-        아이디 : <input type="text" name="id">
-        비밀번호 : <input type="password" name="pwd">
-        <input type="submit">
-    </form>
-    <br>
-    <img src="https://pics.me.me/w%E5%A7%92zo3stea23-tsgoa-sad-kitty-2774735.png" title="sad_kitty">
-    <br>
+        <form action="">
+            아이디 : <input type="text" name="id">
+            비밀번호 : <input type="password" name="pwd">
+            <input type="submit" class="btn btn-primary">
+        </form>
+        <br>
+        <img src="https://pics.me.me/w%E5%A7%92zo3stea23-tsgoa-sad-kitty-2774735.png" title="sad_kitty" class="img-responsive" alt="Responsive image">
+        <br>
 
-    <form action="">
-        제목 : <input type="text" name="title"> <br>
-
-        글의 종류 : <select name="글의 종류">
-            <option value="good">좋음</option>
-            <option value="bad">나쁨</option>
-            <option value="soso">보통</option>            
-        </select><br>
-
-        일기장 : <br><textarea cols="50" rows="20"></textarea><br>
-        
-        <input type="submit">
-    </form>
+        <form action="">
+            <div class="form-group">
+                제목 : <input type="text" class="form-control" name="title"> <br>
+            
+                글의 종류 : <select name="글의 종류" class="form-control">
+                    <option value="good">좋음</option>
+                    <option value="bad">나쁨</option>
+                    <option value="soso">보통</option>            
+                </select><br>
+                일기장 : <br><textarea cols="50" rows="20" class="form-control"></textarea><br>            
+                <input type="submit" class="form-control">
+            </div>
+        </form>
+    </div>
 </body>
 </html>
